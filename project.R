@@ -521,6 +521,7 @@ ggplot(plot_data_1,
              aes(shape = classifier), size = 2) +
   scale_shape_manual(name="", values = shape_values) +
   labs(x = "Number of features tested",
+       # caption = "Figure 1",
        y = "F1 score") +
   theme_minimal() +
   scale_color_manual(name="", values = class_colors) +
@@ -546,6 +547,7 @@ for (feat in fig_features) {
     geom_point(data = subset(plot_data_1, feature == feat & MFW %% 200 == 0 & classifier != "others"), 
                aes(color = classifier, shape = classifier), size = 2) +
     labs(x = "Number of features tested",
+	     # caption = paste("Figure", fig_n),
          y = "F1 score",
          title = F_labels[feat]) +
     theme_minimal() +
@@ -581,6 +583,7 @@ ggplot(plot_data_2,
   geom_point(aes(shape = classifier), data = plot_data_2[plot_data_2$MFW %% 200 == 0, ],
              size = 2) +
   labs(x = "number of features tested",
+       # caption = paste("Figure", fig_n),
        y = "F1 score") +
   theme_minimal() +
   scale_color_manual(name="", values = class_colors, labels = class_labels) +
@@ -611,6 +614,7 @@ for (feat in fig_features) {
     geom_point(data = subset(plot_data_3, feature == feat & MFW %% 200 == 0 & classifier != "others"), 
                aes(color = classifier, shape = classifier), size = 2) +
     labs(x = "number of features tested",
+	     # caption = paste("Figure", fig_n),
          y = "F1 score",
          title = F_labels[feat]) +
     theme_minimal() +
