@@ -1,4 +1,4 @@
-# Project
+# POS-tags, lemmatization, and feature frequencies: stylometric analyses in Turkish using stylo
 
 [![paper](https://img.shields.io/badge/paper-click%20here-green)](https://rdcu.be/d7ix5)
 [![paper](https://img.shields.io/badge/DOI-10.1007/s42803--024--00094--1-blue)](https://doi.org/10.1007/s42803-024-00094-1)
