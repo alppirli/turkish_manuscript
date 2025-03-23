@@ -1,5 +1,8 @@
 # Project
 
+[![paper](https://img.shields.io/badge/paper-click%20here-green)](https://rdcu.be/d7ix5)
+[![paper](https://img.shields.io/badge/DOI-10.1007/s42803--024--00094--1-blue)](https://doi.org/10.1007/s42803-024-00094-1)
+
 ## Organization of files
 
 * conllu_generate.sh: Shell script that uses UDPipe 2 for tokenization, lemmatization, and POS-tagging. Run before running project.R. Requires [udpipe2_client.py](https://github.com/ufal/udpipe/blob/udpipe-2/udpipe2_client.py).
